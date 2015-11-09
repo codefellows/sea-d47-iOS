@@ -48,6 +48,7 @@ class MBGithubOAuth {
         
         // URL constructor.
         if let requestURL = NSURL(string: "\(kOAuthBaseURLString)authorize?client_id=\(self.githubClientId)\(parametersString)") {
+            print(requestURL)
             UIApplication.sharedApplication().openURL(requestURL)
         }
     }
